@@ -1,0 +1,17 @@
+
+use.std::math::u64
+
+begin
+  adv_push.3
+  push.0
+  eq
+  if.true
+    push.1
+    add
+  else
+    swap
+    push.1
+    add
+    swap
+  end 
+end

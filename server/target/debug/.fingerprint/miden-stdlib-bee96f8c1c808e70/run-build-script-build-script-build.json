@@ -1,0 +1,1 @@
+{"rustc":631956316838095215,"features":"","target":0,"profile":0,"path":0,"deps":[[9800311698154898150,"build_script_build",false,11882050498084933281]],"local":[{"RerunIfChanged":{"output":"debug/build/miden-stdlib-bee96f8c1c808e70/output","paths":["asm","../assembly/src"]}}],"rustflags":[],"metadata":0,"config":0,"compile_kind":0}

@@ -1,0 +1,10 @@
+/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/mount/target/release/deps/cc-63e46d31b8894857.rmeta: /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/mount/target/release/deps/libcc-63e46d31b8894857.rlib: /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/mount/target/release/deps/cc-63e46d31b8894857.d: /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs:
+/Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs:
+/Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs:
+/Users/antoniocastro/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs:

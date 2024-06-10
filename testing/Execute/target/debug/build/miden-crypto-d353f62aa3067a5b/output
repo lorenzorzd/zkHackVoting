@@ -1,0 +1,83 @@
+cargo:rerun-if-changed=src/dsa/rpo_falcon512/falcon_c/falcon.h
+cargo:rerun-if-changed=src/dsa/rpo_falcon512/falcon_c/falcon.c
+cargo:rerun-if-changed=src/dsa/rpo_falcon512/falcon_c/rpo.h
+cargo:rerun-if-changed=src/dsa/rpo_falcon512/falcon_c/rpo.c
+TARGET = Some("aarch64-apple-darwin")
+OPT_LEVEL = Some("0")
+HOST = Some("aarch64-apple-darwin")
+cargo:rerun-if-env-changed=CC_aarch64-apple-darwin
+CC_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CC_aarch64_apple_darwin
+CC_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("aes,crc,dit,dotprod,dpb,dpb2,fcma,fhm,flagm,fp16,frintts,jsconv,lor,lse,neon,paca,pacg,pan,pmuv3,ras,rcpc,rcpc2,rdm,sb,sha2,sha3,ssbs,vh")
+cargo:rerun-if-env-changed=CFLAGS_aarch64-apple-darwin
+CFLAGS_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=CFLAGS_aarch64_apple_darwin
+CFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/codec.o" "-c" "PQClean/crypto_sign/falcon-512/clean/codec.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/common.o" "-c" "PQClean/crypto_sign/falcon-512/clean/common.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/fft.o" "-c" "PQClean/crypto_sign/falcon-512/clean/fft.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/fpr.o" "-c" "PQClean/crypto_sign/falcon-512/clean/fpr.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/keygen.o" "-c" "PQClean/crypto_sign/falcon-512/clean/keygen.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/pqclean.o" "-c" "PQClean/crypto_sign/falcon-512/clean/pqclean.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/rng.o" "-c" "PQClean/crypto_sign/falcon-512/clean/rng.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/sign.o" "-c" "PQClean/crypto_sign/falcon-512/clean/sign.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/vrfy.o" "-c" "PQClean/crypto_sign/falcon-512/clean/vrfy.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/aes.o" "-c" "PQClean/common/aes.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/fips202.o" "-c" "PQClean/common/fips202.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/nistseedexpander.o" "-c" "PQClean/common/nistseedexpander.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/randombytes.o" "-c" "PQClean/common/randombytes.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/sha2.o" "-c" "PQClean/common/sha2.c"
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/sp800-185.o" "-c" "PQClean/common/sp800-185.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/src/dsa/rpo_falcon512/falcon_c/falcon.o" "-c" "src/dsa/rpo_falcon512/falcon_c/falcon.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "PQClean/common" "-I" "PQClean/crypto_sign/falcon-512/clean" "-Wall" "-Wextra" "-O3" "-o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/src/dsa/rpo_falcon512/falcon_c/rpo.o" "-c" "src/dsa/rpo_falcon512/falcon_c/rpo.c"
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+cargo:rerun-if-env-changed=AR_aarch64-apple-darwin
+AR_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=AR_aarch64_apple_darwin
+AR_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_aarch64-apple-darwin
+ARFLAGS_aarch64-apple-darwin = None
+cargo:rerun-if-env-changed=ARFLAGS_aarch64_apple_darwin
+ARFLAGS_aarch64_apple_darwin = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: ZERO_AR_DATE="1" "ar" "cq" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/librpo_falcon512.a" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/codec.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/common.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/fft.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/fpr.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/keygen.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/pqclean.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/rng.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/sign.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/crypto_sign/falcon-512/clean/vrfy.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/aes.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/fips202.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/nistseedexpander.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/randombytes.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/sha2.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/PQClean/common/sp800-185.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/src/dsa/rpo_falcon512/falcon_c/falcon.o" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/src/dsa/rpo_falcon512/falcon_c/rpo.o"
+exit status: 0
+running: "ar" "s" "/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out/librpo_falcon512.a"
+exit status: 0
+cargo:rustc-link-lib=static=rpo_falcon512
+cargo:rustc-link-search=native=/Users/antoniocastro/Development/BlockchainVoting/zkHackVoting/testing/Execute/target/debug/build/miden-crypto-d353f62aa3067a5b/out
